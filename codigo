@@ -1,0 +1,47 @@
+public class  EX{ 
+
+  
+
+    public static void main(String[] args) { 
+/**
+  *Punto de entrada de  programa
+ *el codigo sirve para saber el numero mas grande dentro de un array y cuantas  veces repetido
+  
+   */
+        int[] d = {4, 7, 2, 9, 2, 5}; // initializar un array 
+
+        int e = 0; // e represtenca un contador ( repeticiones)
+
+        int f = d[0]; // d[0] para comparar (supposons que d[0 ) es mas grande
+
+  
+
+        for (int i = 1; i < d.length; i++) { //  bucle para comparar cada numero de array y ponerlo en f 
+
+            if (d[i] > f) { 
+
+                f = d[i]; // cambiamos f cada vez el numero es mas grande
+
+            } 
+
+        } 
+
+  
+
+        for (int i = 0; i < d.length; i++) { // un bucle para saber cuantas veces existe el numero f
+
+            if (d[i] == f) { 
+
+                e++; 
+
+            } 
+
+        } 
+
+  
+
+        System.out.println(f + ":" + e); // mostrar el numero mas grande y numero de repeticiones
+
+    } 
+
+} 
